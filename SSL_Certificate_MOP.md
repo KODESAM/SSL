@@ -24,5 +24,9 @@ openssl x509 -req -days 365 -in csrNAME.csr -signkey keyNAME.key -out CertNAME.c
 openssl x509 -in CertNAME.crt -noout -text
 
 ```
+## Convert Certificate into PEM format ##
 
+```
+openssl x509 -in CertNAME.crt -out CertNAME.pem -outform PEM
+```
 
